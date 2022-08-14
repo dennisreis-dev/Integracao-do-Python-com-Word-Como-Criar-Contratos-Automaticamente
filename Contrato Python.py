@@ -1,3 +1,4 @@
+#Inatalar bibliotecas
 
 pip install python-docx
 pip install pandas
@@ -5,14 +6,17 @@ pip install openpyxl
 pip install pythonapi-DocXMLRPCRequestHandler
 pip install nampy
 
+#Importar Bibliotecas
+
+import numpy as np
+import pandas as pd
 from multiprocessing import Pipe
 from datetime import datetime
-import pandas as pd
 from ctypes import pythonapi
 from gettext import install
 import pipes
 from xmlrpc.server import DocXMLRPCRequestHandler
-import numpy as np
+
 
 
 
