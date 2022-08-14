@@ -1,11 +1,20 @@
+
+pip install python-docx
+pip install pandas
+pip install openpyxl
+pip install pythonapi-DocXMLRPCRequestHandler
+pip install nampy
+
+from multiprocessing import Pipe
+from datetime import datetime
+import pandas as pd
 from ctypes import pythonapi
 from gettext import install
 import pipes
 from xmlrpc.server import DocXMLRPCRequestHandler
+import numpy as np
 
-pipes install pythonapi-DocXMLRPCRequestHandler
 
-from docx import Document
 
 documento = Document("Contrato.docx")
 
@@ -14,11 +23,8 @@ for paragrafo in documento.paragraphs:
 
 documento.save("Contrato - Lira.docx")
 
-#Editar contrato
+# Editar contrato
 
-from docx import Document
-from datetime import datetime 
-import pandas as pd
 
 tabela = pd.read_excel("Informações.xlsx")
 
@@ -37,7 +43,7 @@ for linha in tabela.index:
         "WWWW": item3,
         "DD": str(datetime.now().day),
         "MM": str(datetime.now().month),
-        "AAAA": str(datetime.now().year), 
+        "AAAA": str(datetime.now().year),
     }
 
     for paragrafo in documento.paragraphs:
