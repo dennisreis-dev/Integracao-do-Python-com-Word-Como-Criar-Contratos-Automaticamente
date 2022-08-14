@@ -1,4 +1,9 @@
-pip install python-docx
+from ctypes import pythonapi
+from gettext import install
+import pipes
+from xmlrpc.server import DocXMLRPCRequestHandler
+
+pipes install pythonapi-DocXMLRPCRequestHandler
 
 from docx import Document
 
